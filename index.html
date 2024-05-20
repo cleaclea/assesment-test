@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> RECYCLING READY </title>
+  <link rel="icon" type="image/x-icon" href="recyclingready.png">
+
+
+<style> 
+
+.texttitle{ color: #347a82; font-size: xx-large;text-align: center;
+}
+
+.text {
+  color: #347a82;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(0, 0, 0); margin: 5px;
+}
+
+.marquee {
+
+  
+    position: fixed;
+    top: 212px;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1000; 
+  }
+
+  .marquee img {
+    width: 100px;
+    padding: 10px;
+  }
+
+
+
+  .navbar {
+    background-color: rgb(38, 52, 36);
+    font-size: 20px;
+    color: black;
+    padding: 20px 25px;
+  }
+  
+  .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+  
+  header li {
+    display: inline-block; 
+    margin: 0 10px; 
+    vertical-align: middle; 
+    margin: 0 30px;
+  
+  }
+  
+  header li img {
+    vertical-align: middle;}
+  
+  header li a {
+    color: #63a2bc; 
+    text-decoration: none; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
+  
+  
+  
+  .dropdown-content {
+        display: none; 
+          position: absolute;
+        background-color: rgb(38, 52, 36);
+       
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .dropdown-content a {
+        color: #63a2bc;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      header li:hover .dropdown-content {
+        display: block;
+      }
+  
+  
+  
+    
+  
+  
+  
+  
+  </style>
+  </head>
+  
+  
+  
+  
+  <body>
+    <header> 
+    
+  <div class=navbar> 
+    <li>   
+      <a><img width="95" height="85" src= "recyclingready.png" >  </a>
+      </li>
+      
+      <li>  
+      <a href="index.html">Home </a>  
+      </li>  
+  
+     
+  
+      <li>  
+      <a href="whatcanyourecycle.html">What To Recycle </a>  
+      </li>
+
+      <li>  
+        <a href="contact.html">Contact </a>  
+        </li>
+        <li>  
+          <li class="otherbins">
+              <a href="otherbins.html" class="dropbtn">Other Bins</a>
+                <div class="dropdown-content">
+              <a href="rubbish.html">Rubbish</a>
+              <a href="foodscraps.html">Food Scraps</a>
+      
+            </div>
+          </li>
+  
+  </div>
+  </header>
+
+<header2> 
+
+    
+
+ 
+
+      </header2>
+    </ul>  
+    </nav>
+<br>
+<br>
+
+  </div>
+
+  <div class="slideshow-container" style="text-align: center;">
+
+    <div class="mySlides fade" style="display: none;">
+      <div class="numbertext"></div>
+      <img src="frontrecycling3.png" style="width:1000px;height:450px;">
+    </div>
+    
+    <div class="mySlides fade" style="display: none;">
+      <div class="numbertext"></div>
+      <img src="front2.jpeg" style="width:1000px;height:450px;">
+    </div>
+    
+    <div class="mySlides fade" style="display: block;">
+      <div class="numbertext"></div>
+      <img src="recyclingchild.png" style="width:1000px;height:450px;">
+    </div>
+
+    <div class="mySlides fade" style="display: none;">
+        <div class="numbertext"></div>
+        <img src="recyclingthing.png" style="width:1000px;height:450px;">
+      </div>
+    
+
+    </div>
+    <br>
+    
+    
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot active" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>  
+
+    
+
+<style> 
+
+
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #347a82;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #2c684f;
+}
+
+
+
+</style>
+
+
+
+<script>
+function showSlides(n) {
+  let i;
+  let dots = document.getElementsByClassName("dot");
+
+ 
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<br>
+<br>
+
+<div class="texttitle">
+
+Recycling Ready
+
+
+
+</div>
+
+<br> <br>
+<div class="text">
+  Recycling ready is your guide for recycling especially across Auckland. This website simplifies the recycling process, helping visitors understand what can and what can’t be recycled. By offering clear explanations and visuals, it encourages recycling. Alongside recycling the website also explains general rubbish and food scrap bins, promoting sustainability.
+<br> <br>
+Recycling ready values education, empowerment, and community collaboration. It believes in giving individuals knowledge and a guide to make informed choices about recycling and other waste. Giving the platform a sense of action driving positive change towards a cleaner, greener future for Auckland and beyond.
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
